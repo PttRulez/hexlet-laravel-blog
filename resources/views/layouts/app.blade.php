@@ -11,6 +11,13 @@
 </head>
 <body>
 <div class="container mt-4">
+    <div class="links">
+        <a href="/">Home</a>
+        <a href="{{action('PageController@about')}}">About</a>
+        <a href="{{route('article.index')}}">Articles</a>
+    </div>
+</div>
+<div class="container mt-4">
     <h1>@yield('header')</h1>
     <div>
         @yield('content')
